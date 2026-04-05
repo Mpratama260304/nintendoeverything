@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: nintendoeverything-mirror
+    runtime: node
+    buildCommand: npm install
+    startCommand: node src/index.js
+    healthCheckPath: /health
+    envVars:
+      - key: TARGET_DOMAIN
+        value: nintendoeverything.com
+      - key: MIRROR_DOMAIN
+        sync: false # Set this in Render dashboard
+      - key: NODE_ENV
+        value: production

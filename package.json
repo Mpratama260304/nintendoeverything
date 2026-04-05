@@ -1,0 +1,21 @@
+{
+  "name": "nintendoeverything-mirror",
+  "version": "1.0.0",
+  "description": "Full reverse proxy mirror for nintendoeverything.com with SEO-optimized URL rewriting",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.0",
+    "cheerio": "^1.0.0",
+    "compression": "^1.7.5",
+    "dotenv": "^16.4.0",
+    "express": "^4.21.0",
+    "node-cache": "^5.1.2"
+  }
+}
